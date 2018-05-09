@@ -8,7 +8,7 @@
         <meta name="author" content="DryThemes" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/favicon.png" />    
+          
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>	
         <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
@@ -111,10 +111,14 @@
                 <div class="wrapper">
                     <div class="post-info">
                         <div class="post-date">
+                            <p>Other Project Authors</p> <span>Alfred Swinton</span>
+                            <br>
+                            <br>
                             <p>Project started</p> <span>March, 2018</span>
                             <br>
                             <br>
                             <p>Key technologies</p> <span>C++, Qt, TCP</span> 
+                            
                         </div>
                         <div class="text-left download-button">
                             <a href="https://github.com/CanOSpam/ChatApp" class="button">See This On Github</a>
@@ -127,18 +131,20 @@
                             <div class="entry-content">
                                 <div class="content-wrap">
                                     <p>
-                                        Enjoyed minutes related as at on on. Is fanny dried as often me. Goodness as reserved raptures to mistaken steepest oh screened he. Gravity he mr sixteen esteems. Mile home its new way with high told said. Finished no horrible blessing landlord dwelling dissuade if.
+                                        Chat App is a simple instant messenger application that uses TCP to share chat messages between many clients and one server. Messages are encrypted end-to-end with a simple encryption scheme that changes the encoding of the text. This application was written for a school project as an exercise to learn about the Linux networking library.
                                     </p>
                                     <p>&nbsp;</p>
                                     <p>
-                                        Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel. Far quitting dwelling graceful the likewise received building. An fact so to that show am shed sold cold. Unaffected remarkably get yet introduced excellence terminated led. Result either design saw she esteem and. On ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Enjoyed minutes related as at on on. Is fanny dried as often me. Goodness as reserved raptures to mistaken steepest oh screened he. Gravity he mr sixteen esteems.
+                                        For this project the key technology was TCP. Without networking users would only be able to talk to themselves, which tends to get old pretty quickly. Our client-server architecture was fairly simple. The server regularly polled its socket for new messages. When the server received a message it would echo the message out to every other connected client. The clients could then decrypt the message and display it along with a timestamp.
                                     </p>
                                     <p>&nbsp;</p>
-                                    <blockquote>
-                                        <p>Because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone and one.</p>
-                                    </blockquote>
+                                    <p>
+                                        The GUI framework Qt was also instrumental in this project, like many of our school projects. Qt enabled us to easily keep a visual list of connected clients. Using built in functionality we were also able to save a client's chatlog.
+                                    </p>
                                     <p>&nbsp;</p>
-                                    <p>Which we intend to win. With a warning label this big, you know they gotta be fun. Bring me the forms I need to fill out to have her taken away. I decline the title of iron cook and accept the lesser title of zinc saucier, which I just made up. Dinosaurs are extinct today because they lacked opposable thumbs and the brainpower to build a space program. Houston, Tranquillity Base here.</p>
+                                    <p>
+                                        Overall, this app was one of our more successful projects of the term. We ran into some minor issues using the Linux networking library, but once those were resolved it was mostly smooth sailing. If I had had more time, I would have implemented an encryption key generation and sharing technique to increase security. Currently, the application uses a built in key, which defeats much of the purpose of the app. Alternatively I could have switched to a different encryption library, but other libraries I looked at had significantly more overhead.
+                                    </p>
                                 </div>
                             </div>                   
                         </div>
